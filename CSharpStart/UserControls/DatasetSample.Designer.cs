@@ -69,6 +69,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(28, 89);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(396, 150);
             this.dataGridView1.TabIndex = 1;
@@ -95,7 +96,7 @@
             this.lblRow.AutoSize = true;
             this.lblRow.Location = new System.Drawing.Point(31, 253);
             this.lblRow.Name = "lblRow";
-            this.lblRow.Size = new System.Drawing.Size(30, 12);
+            this.lblRow.Size = new System.Drawing.Size(34, 13);
             this.lblRow.TabIndex = 5;
             this.lblRow.Text = "Row";
             // 
@@ -104,7 +105,7 @@
             this.lblColumn.AutoSize = true;
             this.lblColumn.Location = new System.Drawing.Point(148, 253);
             this.lblColumn.Name = "lblColumn";
-            this.lblColumn.Size = new System.Drawing.Size(49, 12);
+            this.lblColumn.Size = new System.Drawing.Size(54, 13);
             this.lblColumn.TabIndex = 7;
             this.lblColumn.Text = "Column";
             // 
@@ -120,7 +121,7 @@
             this.lblValue.AutoSize = true;
             this.lblValue.Location = new System.Drawing.Point(265, 253);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(37, 12);
+            this.lblValue.Size = new System.Drawing.Size(42, 13);
             this.lblValue.TabIndex = 9;
             this.lblValue.Text = "Value";
             // 
@@ -176,7 +177,7 @@
             this.lblRemoveRow.AutoSize = true;
             this.lblRemoveRow.Location = new System.Drawing.Point(563, 316);
             this.lblRemoveRow.Name = "lblRemoveRow";
-            this.lblRemoveRow.Size = new System.Drawing.Size(111, 12);
+            this.lblRemoveRow.Size = new System.Drawing.Size(122, 13);
             this.lblRemoveRow.TabIndex = 15;
             this.lblRemoveRow.Text = "Remove row index";
             // 
@@ -212,7 +213,7 @@
             this.lblSelectColumn.AutoSize = true;
             this.lblSelectColumn.Location = new System.Drawing.Point(563, 357);
             this.lblSelectColumn.Name = "lblSelectColumn";
-            this.lblSelectColumn.Size = new System.Drawing.Size(88, 12);
+            this.lblSelectColumn.Size = new System.Drawing.Size(97, 13);
             this.lblSelectColumn.TabIndex = 19;
             this.lblSelectColumn.Text = "Select Column";
             // 
@@ -228,7 +229,7 @@
             this.lblSelectValue.AutoSize = true;
             this.lblSelectValue.Location = new System.Drawing.Point(563, 384);
             this.lblSelectValue.Name = "lblSelectValue";
-            this.lblSelectValue.Size = new System.Drawing.Size(76, 12);
+            this.lblSelectValue.Size = new System.Drawing.Size(85, 13);
             this.lblSelectValue.TabIndex = 21;
             this.lblSelectValue.Text = "Select Value";
             // 
@@ -244,6 +245,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(430, 89);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(396, 150);
             this.dataGridView2.TabIndex = 22;

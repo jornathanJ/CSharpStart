@@ -142,6 +142,20 @@ namespace WindowsFormsApp5.UserControls
 
         private void btnGetRadioStatus_Click(object sender, EventArgs e)
         {
+            String [] str = new string[] {"1", "2", "3"};
+
+            for(int index = 0; index < str.Length; index++)
+            {
+                Console.WriteLine(str[index]);
+            }
+
+            foreach (String tempStr in str)
+            {
+
+            }
+
+
+
             foreach(Control grpBox in this.groupBox1.Controls)
             {
                 RadioButton radioButtonTemp = ((RadioButton)grpBox);
@@ -184,18 +198,18 @@ namespace WindowsFormsApp5.UserControls
         /* 무한 루프 샘플 입니다. */
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.radioButton1.Checked == false)
-            {
-                this.radioButton1.Checked = true;
-            }
+            //if (this.radioButton1.Checked == false)
+            //{
+            //    this.radioButton1.Checked = true;
+            //}
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.radioButton2.Checked == false)
-            {
-                this.radioButton2.Checked = true;
-            }
+            //if (this.radioButton2.Checked == false)
+            //{
+            //    this.radioButton2.Checked = true;
+            //}
         }
 
         /* 무한 루프 샘플 입니다. */
@@ -203,6 +217,8 @@ namespace WindowsFormsApp5.UserControls
 
         private void btnBlink_Click(object sender, EventArgs e)
         {
+            
+
             this.btnBlink.BackColor = Color.LightSteelBlue;
             Application.DoEvents();
             System.Threading.Thread.Sleep(1000);
@@ -218,6 +234,23 @@ namespace WindowsFormsApp5.UserControls
             Application.DoEvents();
             this.btnBlink.BackColor = Color.Gray;
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(this.GetHellowWorld());
+
+            //ServiceReference1.HelloWorldRequest req = new ServiceReference1.HelloWorldRequest();
+            ServiceReference1.WebService1SoapClient client = new ServiceReference1.WebService1SoapClient();
+            DataSet dsTemp = client.HelloWorld();
+            MessageBox.Show(dsTemp.GetXml());
+            
+        }
+
+
+        private String GetHellowWorld()
+        {
+            return "Hellow World";
         }
     }
 }

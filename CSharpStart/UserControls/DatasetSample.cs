@@ -39,12 +39,13 @@ namespace WindowsFormsApp5.UserControls
 
             this.dsGlobal.Tables.Add(dtTemp);
 
-
             DataRow dRow = dtTemp.NewRow();
             dRow[0] = 1;
             dRow[1] = "jornathan";
             dRow[2] = "Developer";
             dtTemp.Rows.Add(dRow);
+
+            
 
 
             dRow = dtTemp.NewRow();
@@ -90,6 +91,8 @@ namespace WindowsFormsApp5.UserControls
         {
             //예외 처리
             this.dsGlobal.Tables[0].Rows.RemoveAt(int.Parse(this.tbxRemoveRow.Text));
+
+            DataTable dChanged = this.dsGlobal.Tables[0].GetChanges();
         }
 
         private void btnDataTableSelect_Click(object sender, EventArgs e)

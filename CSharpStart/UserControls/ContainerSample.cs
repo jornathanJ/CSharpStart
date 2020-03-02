@@ -16,5 +16,15 @@ namespace WindowsFormsApp5.UserControls
         {
             InitializeComponent();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sdfsdfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
